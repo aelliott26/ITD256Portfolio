@@ -26,7 +26,81 @@
   </section>
   <section class="features">
     <div class="feature">
-      <p>I followed tutorials, and branched off to create a database that stores data across different locations geographically. I ensured that runtimes were similar to what they would have been if it was all stored in the same location. </p>
+      <p>I followed tutorials and branched off to create a database that stores data across different locations geographically. I ensured that runtimes were similar to what they would have been if it were all stored in the same location. </p>
+          <h3>What is it?</h3>
+    <ul>
+      <li>CockroachDB is a distributed SQL database management system.</li>
+      <li>This basically means that the data is distributed among many devices, all linked together.</li>
+      <li>Even though the data is distributed, CockroachDB allows you to query the data as if it were all in one place.</li>
+    </ul>
+
+    <h3>Why use it?</h3>
+    <ul>
+      <li>One main reason to use CockroachDB is for its huge horizontal scaling, as you can add a huge number of devices.</li>
+      <li>The other main reason to use CockroachDB is for its high fault tolerance.</li>
+      <li>It is super difficult to lose all the data as it is stored across many devices.</li>
+      <li>Google uses a similar system, but CockroachDB does not require special hardware to complete the same task as Google.</li>
+    </ul>
+
+    <h3>What to use it for?</h3>
+    <ul>
+      <li>CockroachDB can be used for massive horizontal scaling, and you can constantly add more devices without reaching a bottleneck.</li>
+      <li>It has high availability due to the data being replicated among a lot of different devices.</li>
+      <li>It is good for storing data worldwide, as data can be stored locally.</li>
+      <li>It has a super high fault tolerance, so it is hard to get taken down.</li>
+    </ul>
+
+    <h4>Examples of companies that use it</h4>
+    <ul>
+      <li>Netflix</li>
+      <li>Uber</li>
+      <li>eBay</li>
+      <li>Amazon Web Services</li>
+      <li>Google</li>
+    </ul>
+
+    <h3>CockroachDB vs Postgres</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Distributed SQL</th>
+          <th>PostgreSQL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Architecture</strong></td>
+          <td>Multi-node, globally distributed</td>
+          <td>Single-node, extendable through replication</td>
+        </tr>
+        <tr>
+          <td><strong>Scalability</strong></td>
+          <td>Horizontally scalable</td>
+          <td>Usually only vertically scalable</td>
+        </tr>
+        <tr>
+          <td><strong>Fault Tolerance</strong></td>
+          <td>Built-in high availability</td>
+          <td>Can be configured with replication</td>
+        </tr>
+        <tr>
+          <td><strong>Consistency</strong></td>
+          <td>Usually it's ACID-compliant</td>
+          <td>It's ACID-compliant</td>
+        </tr>
+        <tr>
+          <td><strong>Geo-Distribution</strong></td>
+          <td>Optimized for multiple regions</td>
+          <td>Single-region or manually replicated</td>
+        </tr>
+        <tr>
+          <td><strong>Use Cases</strong></td>
+          <td>Global applications, high traffic</td>
+          <td>Traditional relational database needs</td>
+        </tr>
+      </tbody>
+    </table>
       <a href="https://github.com/aelliott26/ITD256/blob/main/CockroachDB_pres.md" class="button">Link to my github report covering this project.</a>
     </div>
   </section>
