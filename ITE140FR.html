@@ -28,7 +28,58 @@
     <div class="feature">
       <p>This project was to learn the basics of SQL databases, and how they work. We were tasked to design a database for a business, in my case a gym, and to develop and create the entire database.</p>
       <a href="https://github.com/aelliott26/ITE140/blob/main/FinalProject/Final_Report.md" class="button">This is a link to my github with an overview of the project.</a>
-    </div>
+   
+        <h2>Final Project Report</h2>
+
+    <h3>Steps Taken to Complete This Project</h3>
+    <ol>
+      <li>ER Diagram Creation</li>
+      <li>Database Implementation</li>
+      <li>Pandas Extraction</li>
+      <li>Excel Analysis</li>
+    </ol>
+
+    <h4>ER Diagram Creation</h4>
+    <ul>
+      <li>Before beginning this project there were a few requirements to keep in mind, we had to have at least 5 entities, and they had to comply with third normal form.</li>
+      <li>I decided to create tables representing a gym's membership system, as it would be a real world example of a database.</li>
+      <li>I used Lucid Chart, a well known diagram creation website, to model the ER diagram.</li>
+      <li>I created six tables: gym members, personal trainers, classes, sign ups, checkins, and payments.</li>
+      <li>I linked all the tables and checked to ensure compliance with third normal form.</li>
+      <li><a href="https://github.com/aelliott26/ITE140/blob/main/FinalProject/ERD.png">This is a link to the diagram</a></li>
+      <li><img src="ERD.png" alt="This is an image of the diagram"></li>
+    </ul>
+
+    <h4>Database Implementation</h4>
+    <ul>
+      <li>To implement the database I connected to our class database on Postgres.</li>
+      <li>I created a schema "Gym" to place all my tables under.</li>
+      <li>Using my ER diagram, I replicated all the tables with create statements in a single file.</li>
+      <li>Once I had the create statements I used Mockaroo, a mock data creation website, to fill my tables.</li>
+      <li><a href="https://github.com/aelliott26/ITE140/blob/main/FinalProject/Final.sql">This is a link to my SQL script</a></li>
+      <li>I then ran the SQL script in my terminal, and created all the tables with data inside them.</li>
+    </ul>
+
+    <h4>Pandas Extraction</h4>
+    <ul>
+      <li>To extract my database and its information, I used Pandas and SQLAlchemy.</li>
+      <li>I used terminal to connect and access the database through the code.</li>
+      <li>I got my password from an environment variable I set up and then used SQLAlchemy to create a connection string.</li>
+      <li>Then I created an engine with SQLAlchemy to begin running a query.</li>
+      <li>I joined two of my tables, Members and CheckIns, to create a single table with all member check-in data.</li>
+      <li>I then used Pandas to create an Excel file based on this data.</li>
+      <li><a href="https://github.com/aelliott26/ITE140/blob/main/FinalProject/PythonScript.py">This is a link to the Python code</a></li>
+    </ul>
+
+    <h4>Excel Analysis</h4>
+    <ul>
+      <li>To analyse the data gathered in Excel, I first linked a separate Excel sheet to the output to avoid losing progress, as every time the Python script is run, the output sheet is deleted and recreated.</li>
+      <li>Then I used a pivot table to count the amount of times members of each different level of membership checked in.</li>
+      <li>I then created a graph for this same purpose with a slicer based on the day to see which level of membership had the most people check in on a certain day.</li>
+      <li><a href="https://github.com/aelliott26/ITE140/blob/main/FinalProject/Final_Project.xlsx">This is a link to download the Excel Spreadsheet</a></li>
+      <li><img src="PivotTable.png" alt="Image of Pivot Table"></li>
+    </ul>
+      </div>
   </section>
   <footer>
     <a id="vLink1"><strong>HTML</strong> Valid!</a> |
